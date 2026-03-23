@@ -7,7 +7,8 @@ export const translations: Record<string, any> = {
       subtitle: "Guide du Visiteur",
       cta_discover: "Découvrir",
       cta_photos: "Voir les photos",
-      tags: ["Maisons suspendues", "Bourne", "Vercors", "Architecture", "Patrimoine", "Photographie"]
+      tags: ["Maisons suspendues", "Bourne", "Vercors", "Architecture", "Patrimoine", "Photographie"],
+      photo_credit: "Photo par un utilisateur Google Maps"
     },
     overview: {
       label: "Aperçu",
@@ -28,9 +29,13 @@ export const translations: Record<string, any> = {
         "Ruelles médiévales du village",
         "Architecture typique du Dauphiné",
         "Les gorges de la Bourne",
-        "Paysage du massif du Vercors"
+        "Paysage du massif du Vercors",
+        "Pont pittoresque sur la rivière",
+        "Détails de l'architecture locale"
       ],
-      source: "Photos provenant d'utilisateurs Google Maps"
+      source: "Photos provenant d'utilisateurs Google Maps",
+      source_desc: "Photos provenant des utilisateurs Google Maps (source : https://maps.app.goo.gl/g5VJQuhK5xSYcoog9). Images publiques partagées par les visiteurs.",
+      disclaimer: "Photos provenant des utilisateurs Google Maps (source : https://maps.app.goo.gl/g5VJQuhK5xSYcoog9). Images publiques partagées par les visiteurs."
     },
     tips: {
       label: "Conseils",
@@ -112,7 +117,8 @@ export const translations: Record<string, any> = {
       subtitle: "Visitor Guide",
       cta_discover: "Discover",
       cta_photos: "View photos",
-      tags: ["Hanging houses", "Bourne", "Vercors", "Architecture", "Heritage", "Photography"]
+      tags: ["Hanging houses", "Bourne", "Vercors", "Architecture", "Heritage", "Photography"],
+      photo_credit: "Photo by a Google Maps user"
     },
     overview: {
       label: "Overview",
@@ -133,9 +139,13 @@ export const translations: Record<string, any> = {
         "Medieval village lanes",
         "Typical Dauphiné architecture",
         "The Bourne gorges",
-        "Vercors mountain landscape"
+        "Vercors mountain landscape",
+        "Picturesque bridge over the river",
+        "Details of local architecture"
       ],
-      source: "User photos from Google Maps"
+      source: "User photos from Google Maps",
+      source_desc: "Photos from Google Maps users (source: https://maps.app.goo.gl/g5VJQuhK5xSYcoog9). Public images shared by visitors.",
+      disclaimer: "Photos from Google Maps users (source: https://maps.app.goo.gl/g5VJQuhK5xSYcoog9). Public images shared by visitors."
     },
     tips: {
       label: "Tips",
@@ -217,7 +227,8 @@ export const translations: Record<string, any> = {
       subtitle: "Besucherführer",
       cta_discover: "Entdecken",
       cta_photos: "Fotos ansehen",
-      tags: ["Hängende Häuser", "Bourne", "Vercors", "Architektur", "Kulturerbe", "Fotografie"]
+      tags: ["Hängende Häuser", "Bourne", "Vercors", "Architektur", "Kulturerbe", "Fotografie"],
+      photo_credit: "Foto von einem Google Maps-Benutzer"
     },
     overview: {
       label: "Überblick",
@@ -238,9 +249,13 @@ export const translations: Record<string, any> = {
         "Mittelalterliche Dorfgassen",
         "Typische Dauphiné-Architektur",
         "Die Bourne-Schlucht",
-        "Vercors-Gebirgslandschaft"
+        "Vercors-Gebirgslandschaft",
+        "Malerische Brücke über den Fluss",
+        "Details der lokalen Architektur"
       ],
-      source: "Benutzerfotos von Google Maps"
+      source: "Benutzerfotos von Google Maps",
+      source_desc: "Fotos von Google Maps-Benutzern (Quelle: https://maps.app.goo.gl/g5VJQuhK5xSYcoog9). Von Besuchern geteilte öffentliche Bilder.",
+      disclaimer: "Fotos von Google Maps-Benutzern (Quelle: https://maps.app.goo.gl/g5VJQuhK5xSYcoog9). Von Besuchern geteilte öffentliche Bilder."
     },
     tips: {
       label: "Tipps",
@@ -322,7 +337,8 @@ export const translations: Record<string, any> = {
       subtitle: "遊客指南",
       cta_discover: "探索",
       cta_photos: "查看照片",
-      tags: ["懸掛屋", "布爾訥河", "韋科爾", "建築", "文化遺產", "攝影"]
+      tags: ["懸掛屋", "布爾訥河", "韋科爾", "建築", "文化遺產", "攝影"],
+      photo_credit: "來自 Google 地圖使用者的照片"
     },
     overview: {
       label: "概覽",
@@ -343,9 +359,13 @@ export const translations: Record<string, any> = {
         "中世紀村莊小巷",
         "典型的多菲內建築",
         "布爾訥峽谷",
-        "韋科爾山區風光"
+        "韋科爾山區風光",
+        "河上的風景如畫的橋樑",
+        "當地建築細節"
       ],
-      source: "來自 Google 地圖的使用者照片"
+      source: "來自 Google 地圖的使用者照片",
+      source_desc: "照片來自 Google 地圖使用者（來源：https://maps.app.goo.gl/g5VJQuhK5xSYcoog9）。遊客分享的公開圖片。",
+      disclaimer: "照片來自 Google 地圖使用者（來源：https://maps.app.goo.gl/g5VJQuhK5xSYcoog9）。遊客分享的公開圖片。"
     },
     tips: {
       label: "建議",

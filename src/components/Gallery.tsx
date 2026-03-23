@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import { useTranslation } from '../hooks/useTranslation';
 import FadeIn from './FadeIn';
@@ -8,19 +8,6 @@ import photos from '../data/gallery.json';
 
 export default function Gallery() {
   const { t } = useTranslation();
-  const trackRef = useRef<HTMLDivElement>(null);
-
-  const scrollPrev = () => {
-    if (trackRef.current) {
-      trackRef.current.scrollBy({ left: -440, behavior: 'smooth' });
-    }
-  };
-
-  const scrollNext = () => {
-    if (trackRef.current) {
-      trackRef.current.scrollBy({ left: 440, behavior: 'smooth' });
-    }
-  };
 
   return (
     <section id="photos" className="py-[var(--section-gap)]">
@@ -36,55 +23,40 @@ export default function Gallery() {
             {t('gallery.title')}
           </h2>
         </FadeIn>
+        
+        <FadeIn delay={0.2}>
+          <p className="text-sm text-[var(--text-secondary)] mb-8 bg-[var(--badge-bg)] p-4 rounded-md border border-[var(--badge-border)]">
+            {t('gallery.disclaimer') || "Photos provenant des utilisateurs Google Maps (source : https://maps.app.goo.gl/g5VJQuhK5xSYcoog9). Images publiques partagées par les visiteurs."}
+          </p>
+        </FadeIn>
       </div>
 
       <div className="container mx-auto px-4 max-w-[var(--container)] mt-6">
-        <FadeIn delay={0.2}>
-          <div 
-            ref={trackRef}
-            className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-hide"
-            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-          >
+        <FadeIn delay={0.3}>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {photos.map((photo, i) => {
-              // The original JSON has "captionKey": "gallery.captions.0"
-              // We need to resolve this using t()
               const captionArray = t('gallery.captions');
               const captionIndex = parseInt(photo.captionKey.split('.').pop() || '0');
               const caption = captionArray[captionIndex] || '';
 
               return (
-                <div key={photo.id} className="flex-[0_0_min(420px,85vw)] snap-start relative rounded-[var(--radius)] overflow-hidden aspect-[4/3] cursor-grab active:cursor-grabbing group">
+                <div key={photo.id} className="relative rounded-lg overflow-hidden aspect-[4/3] group shadow-md hover:shadow-xl transition-shadow duration-300 bg-gray-200 dark:bg-zinc-800">
                   <Image 
                     src={photo.url} 
                     alt={caption} 
                     fill
-                    sizes="(max-width: 768px) 85vw, 420px"
+                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                     className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
                     referrerPolicy="no-referrer"
+                    unoptimized
                   />
-                  <div className="absolute bottom-0 left-0 right-0 p-10 pt-16 pb-4 bg-gradient-to-t from-black/70 to-transparent text-[0.8rem] text-[#e4e4e7] z-10">
-                    {caption} <small className="opacity-60 ml-1">· {t('gallery.source')}</small>
+                  <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/80 via-black/40 to-transparent text-[0.8rem] text-[#e4e4e7] z-10 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="font-medium line-clamp-2 mb-1 drop-shadow-md">{caption}</p>
+                    <p className="text-white/80 text-[0.7rem] drop-shadow-md">© {t('gallery.source') || "Google Maps utilisateur"}</p>
                   </div>
                 </div>
               );
             })}
-          </div>
-          
-          <div className="flex gap-2 mt-5 justify-end">
-            <button 
-              onClick={scrollPrev}
-              aria-label="Previous"
-              className="w-10 h-10 rounded-full border border-[var(--border)] bg-[var(--bg-card)] text-[var(--text-secondary)] cursor-pointer flex items-center justify-center text-[1.1rem] transition-all hover:border-[var(--accent)] hover:text-[var(--text)]"
-            >
-              &#8592;
-            </button>
-            <button 
-              onClick={scrollNext}
-              aria-label="Next"
-              className="w-10 h-10 rounded-full border border-[var(--border)] bg-[var(--bg-card)] text-[var(--text-secondary)] cursor-pointer flex items-center justify-center text-[1.1rem] transition-all hover:border-[var(--accent)] hover:text-[var(--text)]"
-            >
-              &#8594;
-            </button>
           </div>
         </FadeIn>
       </div>
