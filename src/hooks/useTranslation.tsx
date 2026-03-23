@@ -61,7 +61,11 @@ export function TranslationProvider({ children }: { children: ReactNode }) {
   };
 
   if (!mounted) {
-    return <div style={{ visibility: 'hidden' }}>{children}</div>;
+    return (
+      <TranslationContext.Provider value={{ language, setLanguage: setLanguageState, theme, toggleTheme: () => {}, t }}>
+        <div style={{ visibility: 'hidden' }}>{children}</div>
+      </TranslationContext.Provider>
+    );
   }
 
   return (

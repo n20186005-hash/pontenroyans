@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --section-gap: clamp(80px, 12vw, 140px);
+    --container: min(1100px, 90vw);
+    --radius: 10px;
+    --radius-sm: 6px;
+    --transition: 0.3s cubic-bezier(.4,0,.2,1);
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #09090b;
+    --bg-elevated: #131316;
+    --bg-card: #18181b;
+    --border: #27272a;
+    --text: #fafafa;
+    --text-secondary: #a1a1aa;
+    --text-tertiary: #71717a;
+    --accent: #c4956a;
+    --accent-dim: rgba(196,149,106,0.12);
+    --badge-bg: rgba(255,255,255,0.06);
+    --badge-border: rgba(255,255,255,0.1);
+    --star: #f5c542;
+    --map-filter: grayscale(0.3) brightness(0.85);
+    --hero-overlay: linear-gradient(180deg, rgba(9,9,11,0.3) 0%, rgba(9,9,11,0.85) 70%, #09090b 100%);
+    --shadow: 0 1px 3px rgba(0,0,0,0.4);
+  }
+
+  :root[data-theme="light"] {
+    --bg: #f8f7f4;
+    --bg-elevated: #ffffff;
+    --bg-card: #ffffff;
+    --border: #e4e2dd;
+    --text: #1a1a1a;
+    --text-secondary: #5c5c5c;
+    --text-tertiary: #8c8c8c;
+    --accent: #9a6d42;
+    --accent-dim: rgba(154,109,66,0.1);
+    --badge-bg: rgba(0,0,0,0.04);
+    --badge-border: rgba(0,0,0,0.08);
+    --star: #e6ad00;
+    --map-filter: none;
+    --hero-overlay: linear-gradient(180deg, rgba(248,247,244,0.2) 0%, rgba(248,247,244,0.8) 70%, #f8f7f4 100%);
+    --shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@keyframes heroZoom {
+  from {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1.12);
+  }
+}
+
+/* === GOOGLE MAPS ATTRIBUTION HIDE === */
+/* Note: These styles hide Google Maps branding. Use at your own discretion. */
+/* WARNING: Hiding Google Maps attribution may violate Google's Terms of Service */
+.gm-style-cc, .gmnoprint, .gm-style-mtc { display: none !important; }
