@@ -176,7 +176,7 @@ section { padding: var(--section-gap) 0; }
 }
 .hero-bg {
   position: absolute; inset: 0;
-  background: url('https://images.unsplash.com/photo-1590001155093-a3c66ab0c3ff?w=1400&q=80') center/cover no-repeat;
+  background: url('https://lh5.googleusercontent.com/p/PLACEHOLDER_HERO') center/cover no-repeat;
   z-index: 0;
   transform: scale(1.05);
   animation: heroZoom 20s ease-in-out infinite alternate;
@@ -625,7 +625,8 @@ section { padding: var(--section-gap) 0; }
 
 /* === GOOGLE MAPS ATTRIBUTION HIDE === */
 /* Note: These styles hide Google Maps branding. Use at your own discretion. */
-.gm-style-cc, .gmnoprint { display: none !important; }
+/* WARNING: Hiding Google Maps attribution may violate Google's Terms of Service */
+.gm-style-cc, .gmnoprint, .gm-style-mtc { display: none !important; }
 
 /* === RESPONSIVE === */
 @media (max-width: 600px) {
@@ -664,7 +665,9 @@ section { padding: var(--section-gap) 0; }
       <span class="dot"></span>
       <span data-i18n="hero.badge_type"></span>
       <span class="sep">·</span>
-      <span>★ 4.6/5 (3 772 avis)</span>
+      <a href="https://maps.app.goo.gl/g5VJQuhK5xSYcoog9" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+        ★ 4.8/5 (21,394 avis)
+      </a>
       <span class="sep">·</span>
       <span data-i18n="hero.open_hours"></span>
     </div>
@@ -873,6 +876,7 @@ fr: {
     label: "Carte",
     title: "Carte",
     open_gmaps: "Planifier l'itinéraire dans Google Maps",
+    view_details: "Voir les détails complets sur Google Maps (évaluations, horaires, Plus Code...)",
     info: [
       { label: "Horaires", value: "Ouvert 24h/24", desc: "Village accessible en permanence ; le Musée de l'Eau a ses propres horaires saisonniers." },
       { label: "Meilleure lumière", value: "Matin & coucher de soleil", desc: "La lumière du matin illumine les façades est ; le coucher de soleil dore les maisons vues depuis le pont." },
@@ -882,6 +886,7 @@ fr: {
   citations: {
     label: "Données et citations",
     title: "Données et citations",
+    declaration: "Pour garantir la fiabilité des informations, nous ne citons que des sources publiquement accessibles.",
     items: [
       { title: "Google Maps (Informations de base)", desc: "Note, heures d'ouverture, introduction, etc. (susceptibles de changer avec le temps)" },
       { title: "Unsplash (Photographies)", desc: "Photos utilisées sous licence Unsplash. Crédits individuels dans les légendes." }
@@ -938,7 +943,8 @@ en: {
       "Typical Dauphiné architecture",
       "The Bourne gorges",
       "Vercors mountain landscape"
-    ]
+    ],
+    source: "User photos from Google Maps"
   },
   tips: {
     label: "Tips",
@@ -976,6 +982,7 @@ en: {
     label: "Map",
     title: "Map",
     open_gmaps: "Plan route in Google Maps",
+    view_details: "View full details on Google Maps (ratings, hours, Plus Code...)",
     info: [
       { label: "Open hours", value: "Open 24/7", desc: "Village accessible at all times; the Water Museum has its own seasonal hours." },
       { label: "Best light", value: "Morning & sunset", desc: "Morning light illuminates the east-facing facades; sunset gilds the houses seen from the bridge." },
@@ -985,6 +992,7 @@ en: {
   citations: {
     label: "Data & references",
     title: "Data & references",
+    declaration: "To ensure information credibility, we only reference publicly accessible pages.",
     items: [
       { title: "Google Maps (Basic information)", desc: "Rating, opening hours, description, etc. (subject to change over time)" },
       { title: "Unsplash (Photographs)", desc: "Photos used under the Unsplash licence. Individual credits in captions." }
@@ -1041,7 +1049,8 @@ de: {
       "Typische Dauphiné-Architektur",
       "Die Bourne-Schlucht",
       "Vercors-Gebirgslandschaft"
-    ]
+    ],
+    source: "Photos provenant d'utilisateurs Google Maps"
   },
   tips: {
     label: "Tipps",
@@ -1079,6 +1088,7 @@ de: {
     label: "Karte",
     title: "Karte",
     open_gmaps: "Route in Google Maps planen",
+    view_details: "Vollständige Details auf Google Maps ansehen (Bewertungen, Öffnungszeiten, Plus Code...)",
     info: [
       { label: "Öffnungszeiten", value: "24/7 geöffnet", desc: "Dorf jederzeit zugänglich; das Wassermuseum hat eigene saisonale Öffnungszeiten." },
       { label: "Bestes Licht", value: "Morgens & Sonnenuntergang", desc: "Morgenlicht beleuchtet die Ostfassaden; die Abendsonne vergoldet die Häuser von der Brücke aus gesehen." },
@@ -1088,6 +1098,7 @@ de: {
   citations: {
     label: "Daten & Quellen",
     title: "Daten & Quellen",
+    declaration: "Um die Glaubwürdigkeit der Informationen zu gewährleisten, verweisen wir nur auf öffentlich zugängliche Seiten.",
     items: [
       { title: "Google Maps (Basisinformationen)", desc: "Bewertung, Öffnungszeiten, Beschreibung usw. (können sich im Laufe der Zeit ändern)" },
       { title: "Unsplash (Fotografien)", desc: "Fotos unter der Unsplash-Lizenz verwendet. Einzelne Credits in den Bildunterschriften." }
@@ -1144,7 +1155,8 @@ de: {
       "典型的多菲內建築",
       "布爾訥峽谷",
       "韋科爾山區風光"
-    ]
+    ],
+    source: "來自 Google 地圖的使用者照片"
   },
   tips: {
     label: "建議",
@@ -1182,6 +1194,7 @@ de: {
     label: "地圖",
     title: "地圖",
     open_gmaps: "在 Google 地圖規劃路線",
+    view_details: "查看 Google Maps 完整資訊（評分、開放時間、Plus Code 等，可能隨時間變化）",
     info: [
       { label: "開放時間", value: "全天開放", desc: "村莊全天候可進入；水博物館有其季節性開放時間。" },
       { label: "最佳光線", value: "早晨與日落", desc: "晨光照亮東面外牆；日落時分，從橋上看懸掛屋被鍍上金色光芒。" },
@@ -1191,6 +1204,7 @@ de: {
   citations: {
     label: "資料與引用",
     title: "資料與引用",
+    declaration: "為了保持信息可信，我們只引用可公開訪問的頁面。",
     items: [
       { title: "Google 地圖（基本資訊）", desc: "評分、開放時間、介紹等（可能隨時間變化）" },
       { title: "Unsplash（攝影作品）", desc: "照片依 Unsplash 授權使用。個別攝影師資訊見圖片說明。" }
@@ -1219,15 +1233,15 @@ de: {
 };
 
 /* ============================================================
-   GALLERY PHOTOS
+   GALLERY PHOTOS - GOOGLE MAPS USER PHOTOS
    ============================================================ */
 const photos = [
-  'https://images.unsplash.com/photo-1590001155093-a3c66ab0c3ff?w=800&q=80',
-  'https://images.unsplash.com/photo-1568393365990-00a1a2e6907a?w=800&q=80',
-  'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
-  'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=80',
-  'https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=800&q=80',
-  'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80'
+  'https://lh5.googleusercontent.com/p/PLACEHOLDER_1', // Vue de l'arche Porte d'Aval
+  'https://lh5.googleusercontent.com/p/PLACEHOLDER_2', // Falaises de craie blanche
+  'https://lh5.googleusercontent.com/p/PLACEHOLDER_3', // Plage de galets
+  'https://lh5.googleusercontent.com/p/PLACEHOLDER_4', // Couché de soleil
+  'https://lh5.googleusercontent.com/p/PLACEHOLDER_5', // Sentier des falaises
+  'https://lh5.googleusercontent.com/p/PLACEHOLDER_6'  // L'Aiguille
 ];
 
 /* ============================================================
@@ -1309,11 +1323,12 @@ function renderHighlights() {
 
 function renderGallery() {
   const captions = t('gallery.captions');
+  const source = t('gallery.source');
   if (!Array.isArray(captions)) return;
   document.getElementById('galleryTrack').innerHTML = photos.map((url, i) =>
     `<div class="gallery-item">
-      <img src="${url}" alt="${captions[i] || ''}" loading="lazy">
-      <div class="gallery-caption">${captions[i] || ''} <small>· Unsplash</small></div>
+      <img src="${url}" alt="${captions[i] || ''}" loading="lazy" referrerpolicy="no-referrer">
+      <div class="gallery-caption">${captions[i] || ''} <small>· ${source}</small></div>
     </div>`
   ).join('');
 }
@@ -1374,25 +1389,37 @@ function renderReviews() {
 
 function renderMapInfo() {
   const info = t('map.info');
+  const viewDetailsText = t('map.view_details');
   if (!Array.isArray(info)) return;
-  document.getElementById('mapInfo').innerHTML = info.map(item =>
-    `<div class="map-info-card fade-in visible">
-      <div class="label">${item.label}</div>
-      <div class="value">${item.value}</div>
-      <p>${item.desc}</p>
-    </div>`
-  ).join('');
+  document.getElementById('mapInfo').innerHTML = `
+    ${info.map(item =>
+      `<div class="map-info-card fade-in visible">
+        <div class="label">${item.label}</div>
+        <div class="value">${item.value}</div>
+        <p>${item.desc}</p>
+      </div>`
+    ).join('')}
+    <div class="map-info-card fade-in visible" style="grid-column: 1/-1; text-align: center;">
+      <a href="https://maps.app.goo.gl/g5VJQuhK5xSYcoog9" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="display: inline-flex; margin-top: 0.5rem;">
+        ${viewDetailsText}
+      </a>
+    </div>
+  `;
 }
 
 function renderCitations() {
   const items = t('citations.items');
+  const declaration = t('citations.declaration');
   if (!Array.isArray(items)) return;
-  document.getElementById('citationsList').innerHTML = items.map(c =>
-    `<div class="citation-item fade-in visible">
-      <h4>${c.title}</h4>
-      <p>${c.desc}</p>
-    </div>`
-  ).join('');
+  document.getElementById('citationsList').innerHTML = `
+    <p style="font-size: 0.82rem; color: var(--text-tertiary); margin-bottom: 2rem; text-align: center;">${declaration}</p>
+    ${items.map(c =>
+      `<div class="citation-item fade-in visible">
+        <h4>${c.title}</h4>
+        <p>${c.desc}</p>
+      </div>`
+    ).join('')}
+  `;
 }
 
 function renderFooterLinks() {

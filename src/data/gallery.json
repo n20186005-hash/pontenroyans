@@ -1,0 +1,32 @@
+[
+  {
+    "id": "photo-1",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Etretat_Aval_door.jpg/1200px-Etretat_Aval_door.jpg",
+    "captionKey": "gallery.captions.0"
+  },
+  {
+    "id": "photo-2",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Falaise_d%27Aval_%28Etretat%29.jpg/1200px-Falaise_d%27Aval_%28Etretat%29.jpg",
+    "captionKey": "gallery.captions.1"
+  },
+  {
+    "id": "photo-3",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Etretat_cliff_from_beach.jpg/1200px-Etretat_cliff_from_beach.jpg",
+    "captionKey": "gallery.captions.2"
+  },
+  {
+    "id": "photo-4",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/L%27Aiguille_Creuse.jpg/1200px-L%27Aiguille_Creuse.jpg",
+    "captionKey": "gallery.captions.3"
+  },
+  {
+    "id": "photo-5",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Falaise_d%27Amont_-_Etretat.jpg/1200px-Falaise_d%27Amont_-_Etretat.jpg",
+    "captionKey": "gallery.captions.4"
+  },
+  {
+    "id": "photo-6",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Etretat_sunset.jpg/1200px-Etretat_sunset.jpg",
+    "captionKey": "gallery.captions.5"
+  }
+]
