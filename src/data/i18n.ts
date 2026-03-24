@@ -106,7 +106,7 @@ export const translations: Record<string, any> = {
     },
     cookies: {
       title: "Paramètres des cookies",
-      content: "<h1>Paramètres des cookies</h1><h2>Cookies utilisés</h2><p>Ce site utilise uniquement le stockage local (localStorage) pour :</p><ul><li>Mémoriser votre préférence de thème (clair/sombre)</li><li>Mémoriser votre choix de langue</li></ul><h2>Aucun cookie de suivi</h2><p>Nous n'utilisons aucun cookie de suivi, d'analyse ou publicitaire. Aucune donnée n'est transmise à des tiers par notre site.</p><h2>Google Maps</h2><p>L'intégration de Google Maps peut utiliser ses propres cookies. Consultez la politique de confidentialité de Google pour plus d'informations.</p>"
+      content: "<h1>Paramètres des cookies</h1><p>Nous utilisons des cookies pour améliorer votre expérience de navigation. Vous pouvez choisir d'accepter ou de refuser certains types de cookies. Veuillez noter que la désactivation de certains cookies peut affecter la fonctionnalité du site Web.</p><h2>Cookies strictement nécessaires</h2><p>Ces cookies sont nécessaires au bon fonctionnement du site Web et ne peuvent pas être désactivés dans nos systèmes. Ils ne sont généralement définis qu'en réponse à des actions que vous effectuez et qui équivalent à une demande de services, telles que la définition de vos préférences en matière de confidentialité ou de langue.</p><h2>Cookies d'analyse</h2><p>Ces cookies nous permettent de compter les visites et les sources de trafic afin que nous puissions mesurer et améliorer les performances de notre site. Ils nous aident à savoir quelles pages sont les plus et les moins populaires et à voir comment les visiteurs se déplacent sur le site.</p><h2>Cookies marketing</h2><p>Ces cookies peuvent être mis en place sur notre site par nos partenaires publicitaires. Ils peuvent être utilisés par ces sociétés pour établir un profil de vos intérêts et vous montrer des publicités pertinentes sur d'autres sites.</p>"
     }
   },
   en: {
@@ -216,7 +216,7 @@ export const translations: Record<string, any> = {
     },
     cookies: {
       title: "Cookie Settings",
-      content: "<h1>Cookie Settings</h1><h2>Cookies Used</h2><p>This site only uses local storage (localStorage) for:</p><ul><li>Remembering your theme preference (light/dark)</li><li>Remembering your language choice</li></ul><h2>No Tracking Cookies</h2><p>We do not use any tracking, analytics or advertising cookies. No data is transmitted to third parties by our site.</p><h2>Google Maps</h2><p>The Google Maps integration may use its own cookies. Please refer to Google's privacy policy for more information.</p>"
+      content: "<h1>Cookie Settings</h1><p>We use cookies to improve your browsing experience. You can choose to accept or decline certain types of cookies. Please note that disabling some cookies may affect the functionality of the website.</p><h2>Essential Cookies</h2><p>These cookies are necessary for the website to function properly and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences or language.</p><h2>Analytics Cookies</h2><p>These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site.</p><h2>Marketing Cookies</h2><p>These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites.</p>"
     }
   },
   de: {
@@ -326,7 +326,7 @@ export const translations: Record<string, any> = {
     },
     cookies: {
       title: "Cookie-Einstellungen",
-      content: "<h1>Cookie-Einstellungen</h1><h2>Verwendete Cookies</h2><p>Diese Website verwendet nur lokalen Speicher (localStorage) für:</p><ul><li>Speicherung Ihrer Themenpräferenz (hell/dunkel)</li><li>Speicherung Ihrer Sprachauswahl</li></ul><h2>Keine Tracking-Cookies</h2><p>Wir verwenden keine Tracking-, Analyse- oder Werbe-Cookies. Keine Daten werden von unserer Website an Dritte übermittelt.</p><h2>Google Maps</h2><p>Die Google Maps-Integration kann eigene Cookies verwenden. Weitere Informationen finden Sie in der Datenschutzrichtlinie von Google.</p>"
+      content: "<h1>Cookie-Einstellungen</h1><p>Wir verwenden Cookies, um Ihr Surferlebnis zu verbessern. Sie können wählen, ob Sie bestimmte Arten von Cookies akzeptieren oder ablehnen möchten. Bitte beachten Sie, dass die Deaktivierung einiger Cookies die Funktionalität der Website beeinträchtigen kann.</p><h2>Unbedingt erforderliche Cookies</h2><p>Diese Cookies sind für das reibungslose Funktionieren der Website erforderlich und können in unseren Systemen nicht deaktiviert werden. Sie werden normalerweise nur als Reaktion auf Aktionen gesetzt, die Sie ausführen und die einer Anfrage nach Diensten gleichkommen, wie z. B. die Einstellung Ihrer Datenschutzpräferenzen oder der Sprache.</p><h2>Analyse-Cookies</h2><p>Diese Cookies ermöglichen es uns, Besuche und Verkehrsquellen zu zählen, damit wir die Leistung unserer Website messen und verbessern können. Sie helfen uns zu wissen, welche Seiten am beliebtesten und am wenigsten beliebt sind und zu sehen, wie sich Besucher auf der Website bewegen.</p><h2>Marketing-Cookies</h2><p>Diese Cookies können von unseren Werbepartnern über unsere Website gesetzt werden. Sie können von diesen Unternehmen verwendet werden, um ein Profil Ihrer Interessen zu erstellen und Ihnen relevante Werbung auf anderen Websites zu zeigen.</p>"
     }
   },
   'zh-Hant': {
@@ -436,7 +436,7 @@ export const translations: Record<string, any> = {
     },
     cookies: {
       title: "Cookie 設定",
-      content: "<h1>Cookie 設定</h1><h2>使用的 Cookies</h2><p>本網站僅使用本地儲存（localStorage）用於：</p><ul><li>記住您的主題偏好（亮色/暗色）</li><li>記住您的語言選擇</li></ul><h2>無追蹤 Cookies</h2><p>我們不使用任何追蹤、分析或廣告 Cookie。本網站不會向第三方傳輸任何資料。</p><h2>Google 地圖</h2><p>Google 地圖的嵌入可能使用其自身的 Cookie。詳情請參閱 Google 的隱私權政策。</p>"
+      content: "<h1>Cookie 設定</h1><p>我們使用Cookie來改善您的瀏覽體驗。您可以選擇接受或拒絕某些類型的Cookie。請注意，禁用某些Cookie可能會影響網站的功能。</p><h2>必要 Cookie</h2><p>這些Cookie是網站正常運行所必需的，無法在我們的系統中關閉。它們通常僅在響應您做出的相當於服務請求的操作時設置，例如設置您的隱私首選項或語言。</p><h2>分析 Cookie</h2><p>這些Cookie允許我們計算訪問量和流量來源，以便我們能夠衡量和改善我們網站的性能。它們幫助我們了解哪些頁面最受歡迎以及訪問者如何在網站上移動。</p><h2>營銷 Cookie</h2><p>這些Cookie可能由我們的廣告合作夥伴通過我們的網站設置。它們可能被這些公司用於建立您的興趣檔案並在其他網站上向您展示相關廣告。</p>"
     }
   }
 };
