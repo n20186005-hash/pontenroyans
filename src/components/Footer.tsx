@@ -66,7 +66,7 @@ export default function Footer() {
       {['privacy', 'terms', 'cookies'].map((type) => (
         <div 
           key={type}
-          className={`fixed inset-0 z-[200] bg-[var(--bg)] overflow-y-auto transition-opacity duration-300 ${activeModal === `${type}Page` ? 'opacity-100 block' : 'opacity-0 hidden'}`}
+          className={`fixed inset-0 z-[200] bg-[var(--bg)] overflow-y-auto transition-opacity duration-300 ${activeModal === (type === 'cookies' ? 'cookiePage' : `${type}Page`) ? 'opacity-100 block' : 'opacity-0 hidden'}`}
         >
           <div className="container mx-auto px-4 max-w-[var(--container)]">
             <div className="flex items-center justify-between py-6 border-b border-[var(--border)] mb-8">
