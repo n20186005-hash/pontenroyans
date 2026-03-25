@@ -27,6 +27,12 @@ export default function Overview() {
             {t('overview.text')}
           </p>
         </FadeIn>
+
+        <FadeIn delay={0.25}>
+          <p className="text-sm text-[var(--text-tertiary)] max-w-[700px] mb-10 leading-[1.8] p-4 bg-[var(--badge-bg)] border border-[var(--badge-border)] rounded-md">
+            {t('footer.disclaimer_text')}
+          </p>
+        </FadeIn>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {t('overview.highlights').map((h: any, i: number) => (
