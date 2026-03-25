@@ -14,6 +14,7 @@ export const translations: Record<string, any> = {
       label: "Aperçu",
       title: "Pourquoi ce village est unique",
       text: "Accrochées aux parois rocheuses au-dessus de la Bourne, les maisons suspendues de Pont-en-Royans forment l'un des paysages les plus saisissants du Vercors. Ce village médiéval, classé site remarquable, offre un mélange rare d'architecture vernaculaire et de nature spectaculaire.",
+      source_info: "Les informations sont extraites de sources publiques (Office de Tourisme local et Wikipédia) et combinées avec les informations de base de Google Maps.",
       highlights: [
         { icon: "🏘", title: "Architecture suspendue", desc: "Des maisons colorées littéralement accrochées à la falaise depuis le XVIe siècle, défiant la gravité au-dessus de la rivière Bourne." },
         { icon: "💧", title: "Musée de l'Eau", desc: "Un musée interactif unique dédié à l'eau du monde entier : dégustation, parcours sensoriel, et vue panoramique sur les gorges." },
@@ -35,7 +36,9 @@ export const translations: Record<string, any> = {
       ],
       source: "Photos provenant d'utilisateurs Google Maps",
       source_desc: "Photos provenant des utilisateurs Google Maps (source : https://maps.app.goo.gl/g5VJQuhK5xSYcoog9). Images publiques partagées par les visiteurs.",
-      disclaimer: "Photos provenant des utilisateurs Google Maps (source : https://maps.app.goo.gl/g5VJQuhK5xSYcoog9). Images publiques partagées par les visiteurs."
+      disclaimer: "Photos provenant des utilisateurs Google Maps (source : https://maps.app.goo.gl/g5VJQuhK5xSYcoog9). Images publiques partagées par les visiteurs.",
+      disclaimer_prefix: "Photos provenant d'utilisateurs Google Maps. Images publiques partagées par les visiteurs.",
+      disclaimer_link: "Source : cliquer ici pour voir sur Google Maps"
     },
     tips: {
       label: "Conseils",
@@ -125,6 +128,7 @@ export const translations: Record<string, any> = {
       label: "Overview",
       title: "Why this village is unique",
       text: "Clinging to the rock face above the Bourne river, the hanging houses of Pont-en-Royans form one of the most striking landscapes in the Vercors. This medieval village, classified as a remarkable site, offers a rare blend of vernacular architecture and spectacular nature.",
+      source_info: "Information is extracted from public resources (local Tourist Office and Wikipedia) and combined with basic information from Google Maps.",
       highlights: [
         { icon: "🏘", title: "Hanging architecture", desc: "Colourful houses literally clinging to the cliff since the 16th century, defying gravity above the Bourne river." },
         { icon: "💧", title: "Water Museum", desc: "A unique interactive museum dedicated to water from around the world: tasting, sensory experience, and panoramic gorge views." },
@@ -146,7 +150,9 @@ export const translations: Record<string, any> = {
       ],
       source: "User photos from Google Maps",
       source_desc: "Photos from Google Maps users (source: https://maps.app.goo.gl/g5VJQuhK5xSYcoog9). Public images shared by visitors.",
-      disclaimer: "Photos from Google Maps users (source: https://maps.app.goo.gl/g5VJQuhK5xSYcoog9). Public images shared by visitors."
+      disclaimer: "Photos from Google Maps users (source: https://maps.app.goo.gl/g5VJQuhK5xSYcoog9). Public images shared by visitors.",
+      disclaimer_prefix: "Photos from Google Maps users. Public images shared by visitors.",
+      disclaimer_link: "Source: click here to view on Google Maps"
     },
     tips: {
       label: "Tips",
@@ -236,6 +242,7 @@ export const translations: Record<string, any> = {
       label: "Überblick",
       title: "Was dieses Dorf einzigartig macht",
       text: "An die Felswand über der Bourne geklammert, bilden die hängenden Häuser von Pont-en-Royans eine der eindrucksvollsten Landschaften des Vercors. Dieses mittelalterliche Dorf, als bemerkenswerter Ort eingestuft, bietet eine seltene Mischung aus regionaler Architektur und spektakulärer Natur.",
+      source_info: "Die Informationen stammen aus öffentlichen Quellen (örtliches Tourismusbüro und Wikipedia) und werden mit grundlegenden Informationen aus Google Maps kombiniert.",
       highlights: [
         { icon: "🏘", title: "Hängende Architektur", desc: "Bunte Häuser, die seit dem 16. Jahrhundert buchstäblich an der Klippe hängen und über der Bourne der Schwerkraft trotzen." },
         { icon: "💧", title: "Wassermuseum", desc: "Ein einzigartiges interaktives Museum rund ums Wasser aus aller Welt: Verkostung, Sinneserlebnis und Panoramablick auf die Schlucht." },
@@ -257,7 +264,9 @@ export const translations: Record<string, any> = {
       ],
       source: "Benutzerfotos von Google Maps",
       source_desc: "Fotos von Google Maps-Benutzern (Quelle: https://maps.app.goo.gl/g5VJQuhK5xSYcoog9). Von Besuchern geteilte öffentliche Bilder.",
-      disclaimer: "Fotos von Google Maps-Benutzern (Quelle: https://maps.app.goo.gl/g5VJQuhK5xSYcoog9). Von Besuchern geteilte öffentliche Bilder."
+      disclaimer: "Fotos von Google Maps-Benutzern (Quelle: https://maps.app.goo.gl/g5VJQuhK5xSYcoog9). Von Besuchern geteilte öffentliche Bilder.",
+      disclaimer_prefix: "Fotos von Google Maps-Benutzern. Von Besuchern geteilte öffentliche Bilder.",
+      disclaimer_link: "Quelle: Klicken Sie hier, um auf Google Maps anzuzeigen"
     },
     tips: {
       label: "Tipps",
@@ -347,6 +356,7 @@ export const translations: Record<string, any> = {
       label: "概覽",
       title: "這座村莊為何獨一無二",
       text: "懸掛在布爾訥河上方岩壁上的蓬昂魯瓦揚懸掛屋，構成了韋科爾地區最引人注目的景觀之一。這座中世紀村莊被列為法國著名景點，將鄉土建築與壯麗自然融為一體。",
+      source_info: "信息提取自公共資源（當地旅遊局和維基百科），並結合了 Google 地圖的基本信息。",
       highlights: [
         { icon: "🏘", title: "懸掛建築", desc: "自十六世紀以來，色彩繽紛的房屋直接懸掛在懸崖上，在布爾訥河上方挑戰地心引力。" },
         { icon: "💧", title: "水博物館", desc: "獨特的互動式博物館，展示世界各地的水資源：品水體驗、感官之旅，以及峽谷全景觀景台。" },
@@ -368,7 +378,9 @@ export const translations: Record<string, any> = {
       ],
       source: "來自 Google 地圖的使用者照片",
       source_desc: "照片來自 Google 地圖使用者（來源：https://maps.app.goo.gl/g5VJQuhK5xSYcoog9）。遊客分享的公開圖片。",
-      disclaimer: "照片來自 Google 地圖使用者（來源：https://maps.app.goo.gl/g5VJQuhK5xSYcoog9）。遊客分享的公開圖片。"
+      disclaimer: "照片來自 Google 地圖使用者（來源：https://maps.app.goo.gl/g5VJQuhK5xSYcoog9）。遊客分享的公開圖片。",
+      disclaimer_prefix: "照片來自 Google 地圖使用者遊客分享的公開圖片。",
+      disclaimer_link: "來源：點擊這裡查看"
     },
     tips: {
       label: "建議",

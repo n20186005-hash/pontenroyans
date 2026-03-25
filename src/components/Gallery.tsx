@@ -25,8 +25,16 @@ export default function Gallery() {
         </FadeIn>
         
         <FadeIn delay={0.2}>
-          <p className="text-sm text-[var(--text-secondary)] mb-8 bg-[var(--badge-bg)] p-4 rounded-md border border-[var(--badge-border)]">
-            {t('gallery.disclaimer') || "Photos provenant des utilisateurs Google Maps (source : https://maps.app.goo.gl/g5VJQuhK5xSYcoog9). Images publiques partagées par les visiteurs."}
+          <p className="text-sm text-[var(--text-secondary)] mb-8 bg-[var(--badge-bg)] p-4 rounded-md border border-[var(--badge-border)] flex flex-wrap items-center gap-1">
+            <span>{t('gallery.disclaimer_prefix') || "Photos provenant des utilisateurs Google Maps. Images publiques partagées par les visiteurs."}</span>
+            <a 
+              href="https://maps.app.goo.gl/g5VJQuhK5xSYcoog9" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:text-blue-600 underline decoration-1 underline-offset-2 transition-colors"
+            >
+              {t('gallery.disclaimer_link') || "Source : Google Maps"}
+            </a>
           </p>
         </FadeIn>
       </div>

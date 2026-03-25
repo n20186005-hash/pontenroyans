@@ -23,8 +23,11 @@ export default function Overview() {
         </FadeIn>
         
         <FadeIn delay={0.2}>
-          <p className="text-[1.05rem] text-[var(--text-secondary)] max-w-[700px] mb-10 leading-[1.8]">
+          <p className="text-[1.05rem] text-[var(--text-secondary)] max-w-[700px] mb-4 leading-[1.8]">
             {t('overview.text')}
+          </p>
+          <p className="text-[0.9rem] text-[var(--text-tertiary)] max-w-[700px] mb-10 leading-[1.6] italic">
+            {t('overview.source_info')}
           </p>
         </FadeIn>
 

@@ -18,7 +18,7 @@ export default function Header() {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300 ${scrolled ? 'bg-[color-mix(in_srgb,var(--bg)_85%,transparent)] backdrop-blur-lg border-b border-[var(--border)]' : ''}`}>
       <div className="container mx-auto flex items-center justify-between px-4">
-        <div className="font-display text-base text-[var(--text)] whitespace-nowrap overflow-hidden text-ellipsis max-w-[50%]">
+        <div className="font-display text-xl md:text-2xl text-[var(--text)] whitespace-nowrap overflow-hidden text-ellipsis max-w-[50%]">
           Pont-en-Royans
         </div>
         <div className="flex items-center gap-2">
