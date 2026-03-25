@@ -56,6 +56,9 @@ export default function Footer() {
           <div className="text-[0.78rem] text-[var(--text-tertiary)] mb-3">
             {t('footer.contact')}
           </div>
+          <div className="text-[0.78rem] text-[var(--text-tertiary)] mb-3 px-4">
+            {t('footer.disclaimer_text')}
+          </div>
           <div className="text-[0.73rem] text-[var(--text-tertiary)] opacity-70">
             {t('footer.copy')}
           </div>
