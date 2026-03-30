@@ -21,13 +21,6 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://pontenroyans.com'),
   alternates: {
     canonical: '/',
-    languages: {
-      'fr': '/fr',
-      'en': '/en',
-      'de': '/de',
-      'zh-Hant': '/zh-Hant',
-      'x-default': '/',
-    },
   },
 }
 
