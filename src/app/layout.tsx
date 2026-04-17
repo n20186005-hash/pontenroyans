@@ -31,6 +31,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" suppressHydrationWarning>
+            <head>
+        <meta name="google-adsense-account" content="ca-pub-9279583389810634" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9279583389810634" crossOrigin="anonymous"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            (function() {
+              const theme = localStorage.getItem('theme');
+              if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+              }
+            })();
+          `,
+        }} />
+      </head>
       <body className={`${dmSans.variable} ${dmSerifDisplay.variable} font-body bg-[var(--bg)] text-[var(--text)] antialiased overflow-x-hidden transition-colors duration-300`}>
         <TranslationProvider>
           {children}
