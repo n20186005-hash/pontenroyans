@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { useTranslation } from '../hooks/useTranslation';
 import FadeIn from './FadeIn';
 
@@ -42,6 +43,17 @@ export default function Footer() {
 
       <footer className="border-t border-[var(--border)] py-12 text-center">
         <div className="container mx-auto px-4 max-w-[var(--container)]">
+          <div className="flex justify-center gap-6 mb-6 flex-wrap text-[0.8rem] text-[var(--text-tertiary)]">
+            <Link href="/" className="hover:text-[var(--text)]">
+              Accueil
+            </Link>
+            <Link href="/que-faire-pont-en-royans/" className="hover:text-[var(--text)]">
+              Que faire
+            </Link>
+            <Link href="/maisons-suspendues-pont-en-royans/" className="hover:text-[var(--text)]">
+              Maisons suspendues
+            </Link>
+          </div>
           <div className="flex justify-center gap-6 mb-6 flex-wrap">
             <button onClick={() => setActiveModal('privacyPage')} className="text-[0.8rem] text-[var(--text-tertiary)] hover:text-[var(--text)] bg-transparent border-none cursor-pointer">
               {t('footer.privacy')}

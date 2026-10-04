@@ -2,6 +2,21 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'standalone',
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'pontenroyans.com',
+          },
+        ],
+        destination: 'https://www.pontenroyans.com/:path*',
+        permanent: true,
+      },
+    ]
+  },
   images: {
     remotePatterns: [
       {

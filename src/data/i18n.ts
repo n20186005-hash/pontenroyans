@@ -97,8 +97,8 @@ export const translations: Record<string, any> = {
       terms: "Conditions d'utilisation",
       cookies: "Paramètres des cookies",
       contact: "Pour toute assistance technique concernant ce site, veuillez contacter : claritleonelmnicol@gmail.com",
-      copy: "© 2026 Les maisons suspendues de Pont-en-Royans · Tous droits réservés.",
-      disclaimer_text: "Ce site est un guide touristique tiers indépendant, conçu pour offrir aux visiteurs un contexte historique objectif et des suggestions de visite, sans lien avec l'organisme de gestion officiel de Pont-en-Royans. Pour l'achat de billets officiels, veuillez consulter les canaux officiels."
+      copy: "© 2026 Pont-en-Royans · Tous droits réservés.",
+      disclaimer_text: "Ce site est un guide touristique tiers indépendant consacré à Pont-en-Royans, à ses maisons suspendues et aux activités autour du village. Il n'est pas affilié à l'organisme de gestion officiel local. Pour les informations et réservations officielles, veuillez consulter les canaux officiels."
     },
     privacy: {
       title: "Politique de confidentialité",
@@ -211,8 +211,8 @@ export const translations: Record<string, any> = {
       terms: "Terms of Service",
       cookies: "Cookie Settings",
       contact: "For technical support regarding this website, please contact: claritleonelmnicol@gmail.com",
-      copy: "© 2026 Les maisons suspendues de Pont-en-Royans · All rights reserved.",
-      disclaimer_text: "This website is an independent third-party tourist information guide, designed to provide visitors with objective historical context and touring suggestions, and is not affiliated with the official management body of Pont-en-Royans. For official ticket purchases, please visit official channels."
+      copy: "© 2026 Pont-en-Royans · All rights reserved.",
+      disclaimer_text: "This website is an independent third-party travel guide focused on Pont-en-Royans, its hanging houses and the activities around the village. It is not affiliated with the local official management body. For official information and bookings, please consult official channels."
     },
     privacy: {
       title: "Privacy Policy",
@@ -325,8 +325,8 @@ export const translations: Record<string, any> = {
       terms: "Nutzungsbedingungen",
       cookies: "Cookie-Einstellungen",
       contact: "Für technische Unterstützung zu dieser Website kontaktieren Sie bitte: claritleonelmnicol@gmail.com",
-      copy: "© 2026 Les maisons suspendues de Pont-en-Royans · Alle Rechte vorbehalten.",
-      disclaimer_text: "Diese Website ist ein unabhängiger Drittanbieter-Touristenführer, der Besuchern objektiven historischen Kontext und Besichtigungsvorschläge bieten soll und nicht mit der offiziellen Verwaltungsstelle von Pont-en-Royans verbunden ist. Für den Kauf offizieller Tickets besuchen Sie bitte die offiziellen Kanäle."
+      copy: "© 2026 Pont-en-Royans · Alle Rechte vorbehalten.",
+      disclaimer_text: "Diese Website ist ein unabhängiger Reiseführer eines Drittanbieters mit Fokus auf Pont-en-Royans, seine hängenden Häuser und Aktivitäten rund um das Dorf. Sie ist nicht mit der örtlichen offiziellen Verwaltung verbunden. Für offizielle Informationen und Buchungen nutzen Sie bitte die offiziellen Kanäle."
     },
     privacy: {
       title: "Datenschutzrichtlinie",
@@ -439,8 +439,8 @@ export const translations: Record<string, any> = {
       terms: "服務條款",
       cookies: "Cookie 設定",
       contact: "如需本網站的技術支援，請聯繫：claritleonelmnicol@gmail.com",
-      copy: "© 2026 Les maisons suspendues de Pont-en-Royans · 保留所有權利。",
-      disclaimer_text: "本網站是一個獨立的第三方旅遊資訊指南，旨在為遊客提供客觀的歷史背景與遊覽建議，與 Pont-en-Royans 的官方管理機構無關。如需購買官方門票，請訪問官方渠道。"
+      copy: "© 2026 Pont-en-Royans · 保留所有權利。",
+      disclaimer_text: "本網站是一個獨立的第三方旅遊指南，聚焦於 Pont-en-Royans、懸掛屋與村莊周邊活動，與當地官方管理機構無關。如需官方資訊或預訂，請查閱官方渠道。"
     },
     privacy: {
       title: "隱私權政策",

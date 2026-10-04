@@ -16,11 +16,20 @@ const dmSerifDisplay = DM_Serif_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Les maisons suspendues de Pont-en-Royans | Guide du Visiteur',
-  description: 'Guide complet des Maisons Suspendues de Pont-en-Royans : architecture médiévale, gorges de la Bourne, Vercors et conseils de voyage.',
-  metadataBase: new URL('https://pontenroyans.com'),
+  title: {
+    default: 'Pont-en-Royans : guide visite, maisons suspendues et idees de sortie',
+    template: '%s | Pontenroyans',
+  },
+  description:
+    'Guide touristique independant pour visiter Pont-en-Royans, ses maisons suspendues et les activites autour du village.',
+  metadataBase: new URL('https://www.pontenroyans.com'),
   alternates: {
     canonical: '/',
+  },
+  openGraph: {
+    siteName: 'Pontenroyans',
+    locale: 'fr_FR',
+    type: 'website',
   },
 }
 
