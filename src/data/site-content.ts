@@ -5,8 +5,11 @@ export const attraction = {
   hangingHousesName: 'Les maisons suspendues de Pont-en-Royans',
   address: '15 Grande Rue, 38680 Pont-en-Royans, France',
   phone: '+33 4 76 36 03 09',
+  phoneHref: 'tel:+33476360309',
   rating: '4.6',
   reviewCount: '3,974',
+  category: 'Tourist attraction',
+  plusCode: '386W+5F Pont-en-Royans, France',
   mapsUrl: 'https://maps.app.goo.gl/g5VJQuhK5xSYcoog9',
 }
 
@@ -43,7 +46,13 @@ export const practicalInfo = [
   {
     title: 'Telephone',
     value: attraction.phone,
+    href: attraction.phoneHref,
     text: 'A afficher clairement dans la section pratique pour renforcer la confiance et aider les visiteurs a preparer leur venue.',
+  },
+  {
+    title: 'Plus Code',
+    value: attraction.plusCode,
+    text: 'Utile pour retrouver rapidement le site dans Google Maps et verifier que l internaute arrive bien au bon point de visite.',
   },
   {
     title: 'Parking',

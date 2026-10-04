@@ -49,8 +49,11 @@ const structuredData = [
     address: {
       '@type': 'PostalAddress',
       streetAddress: attraction.address,
+      postalCode: '38680',
+      addressLocality: 'Pont-en-Royans',
       addressCountry: 'FR',
     },
+    sameAs: [attraction.mapsUrl],
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: attraction.rating,
@@ -135,7 +138,13 @@ export default function MaisonsSuspenduesPage() {
                   <strong className="text-[var(--text)]">Adresse :</strong> {attraction.address}
                 </p>
                 <p>
-                  <strong className="text-[var(--text)]">Telephone :</strong> {attraction.phone}
+                  <strong className="text-[var(--text)]">Telephone :</strong>{' '}
+                  <a href={attraction.phoneHref} className="text-blue-500 underline underline-offset-4">
+                    {attraction.phone}
+                  </a>
+                </p>
+                <p>
+                  <strong className="text-[var(--text)]">Plus Code :</strong> {attraction.plusCode}
                 </p>
                 <p>
                   <strong className="text-[var(--text)]">Google Maps :</strong>{' '}

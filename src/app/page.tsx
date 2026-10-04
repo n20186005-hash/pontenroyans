@@ -63,8 +63,12 @@ const structuredData = [
     address: {
       '@type': 'PostalAddress',
       streetAddress: attraction.address,
+      postalCode: '38680',
+      addressLocality: 'Pont-en-Royans',
       addressCountry: 'FR',
     },
+    telephone: attraction.phone,
+    sameAs: [attraction.mapsUrl],
   },
   {
     '@context': 'https://schema.org',
@@ -108,7 +112,7 @@ export default function Home() {
                 {attraction.rating}/5 ({attraction.reviewCount} avis)
               </a>
               <span className="opacity-40">|</span>
-              <span>Vercors - Royans</span>
+              <span>{attraction.category}</span>
             </div>
 
             <h1 className="mt-6 max-w-4xl font-display text-[clamp(2.3rem,6vw,4.4rem)] leading-tight text-white">
@@ -231,11 +235,19 @@ export default function Home() {
               Les informations que les visiteurs cherchent en priorite sur mobile
             </h2>
           </div>
-          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-5">
             {practicalInfo.map((item) => (
               <article key={item.title} className="rounded-[var(--radius)] border border-[var(--border)] bg-[var(--bg-card)] p-6">
                 <p className="text-xs uppercase tracking-[0.14em] text-[var(--text-tertiary)]">{item.title}</p>
-                <h3 className="mt-3 text-lg font-semibold text-[var(--text)]">{item.value}</h3>
+                <h3 className="mt-3 text-lg font-semibold text-[var(--text)]">
+                  {'href' in item && item.href ? (
+                    <a href={item.href} className="text-blue-500 underline underline-offset-4">
+                      {item.value}
+                    </a>
+                  ) : (
+                    item.value
+                  )}
+                </h3>
                 <p className="mt-3 text-sm leading-7 text-[var(--text-secondary)]">{item.text}</p>
               </article>
             ))}
