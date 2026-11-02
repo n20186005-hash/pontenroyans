@@ -23,9 +23,6 @@ export const metadata: Metadata = {
   description:
     'Guide touristique independant pour visiter Pont-en-Royans, ses maisons suspendues et les activites autour du village.',
   metadataBase: new URL('https://www.pontenroyans.com'),
-  alternates: {
-    canonical: '/',
-  },
   openGraph: {
     siteName: 'Pontenroyans',
     locale: 'fr_FR',
