@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { useTranslation } from '../hooks/useTranslation';
-import FadeIn from './FadeIn';
+import { sources } from '../data/site-content';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -13,31 +13,14 @@ export default function Footer() {
     <>
       <section id="citations" className="py-[var(--section-gap)]">
         <div className="container mx-auto px-4 max-w-[var(--container)]">
-          <FadeIn>
-            <div className="text-[0.75rem] tracking-[0.15em] uppercase text-[var(--text-tertiary)] mb-4 font-medium">
-              {t('citations.label')}
-            </div>
-          </FadeIn>
-          
-          <FadeIn delay={0.1}>
-            <h2 className="text-[clamp(1.6rem,3.5vw,2.4rem)] mb-6 text-[var(--text)] font-display leading-[1.2]">
-              {t('citations.title')}
-            </h2>
-          </FadeIn>
-
-          <div id="citationsList">
-            <p className="text-[0.82rem] text-[var(--text-tertiary)] mb-8 text-center">
-              {t('citations.declaration')}
-            </p>
-            {t('citations.items').map((c: any, i: number) => (
-              <FadeIn key={i} delay={0.2 + i * 0.1}>
-                <div className="py-5 border-b border-[var(--border)] first:border-t">
-                  <h4 className="font-body text-[0.88rem] font-semibold mb-1">{c.title}</h4>
-                  <p className="text-[0.8rem] text-[var(--text-secondary)]">{c.desc}</p>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
+          <h2 className="font-display text-2xl text-[var(--text)]">Sources touristiques</h2>
+          <p className="mt-3 text-sm text-[var(--text-secondary)]">Informations vérifiées le 2 novembre 2026. Les conditions de visite peuvent changer.</p>
+          <ul className="mt-5 space-y-2 text-sm text-[var(--text-secondary)]">
+            <li><a href={sources.village} className="underline">Office de tourisme : Pont-en-Royans</a></li>
+            <li><a href={sources.circuit} className="underline">Circuit patrimonial du village</a></li>
+            <li><a href={sources.museum} className="underline">Musée de l’Eau : statut et services</a></li>
+            <li><a href={sources.office} className="underline">Bureau d’information : horaires saisonniers</a></li>
+          </ul>
         </div>
       </section>
 
@@ -47,12 +30,14 @@ export default function Footer() {
             <Link href="/" className="hover:text-[var(--text)]">
               Accueil
             </Link>
-            <Link href="/que-faire-pont-en-royans/" className="hover:text-[var(--text)]">
+            <Link href="/que-faire-pont-en-royans" className="hover:text-[var(--text)]">
               Que faire
             </Link>
-            <Link href="/maisons-suspendues-pont-en-royans/" className="hover:text-[var(--text)]">
+            <Link href="/maisons-suspendues-pont-en-royans" className="hover:text-[var(--text)]">
               Maisons suspendues
             </Link>
+            <Link href="/histoire-pont-en-royans" className="hover:text-[var(--text)]">Histoire</Link>
+            <Link href="/musee-eau-pont-en-royans" className="hover:text-[var(--text)]">Musée de l’Eau</Link>
           </div>
           <div className="flex justify-center gap-6 mb-6 flex-wrap">
             <button onClick={() => setActiveModal('privacyPage')} className="text-[0.8rem] text-[var(--text-tertiary)] hover:text-[var(--text)] bg-transparent border-none cursor-pointer">
