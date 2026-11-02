@@ -93,15 +93,15 @@ export const translations: Record<string, any> = {
     },
     privacy: {
       title: "Politique de confidentialité",
-      content: "<h1>Confidentialité</h1><p>Ce guide ne propose ni compte ni formulaire de réservation. Le choix du thème peut être conservé dans le stockage local de votre navigateur.</p><p>La page charge Google Maps et Google AdSense ; ces services tiers peuvent traiter des données ou définir des cookies selon leurs propres règles. Consultez leurs politiques avant de les utiliser.</p><p>Contact : claritleonelmnicol@gmail.com</p>"
+      content: "<p>Ce guide ne propose ni compte ni formulaire de réservation. Le choix du thème peut être conservé dans le stockage local de votre navigateur.</p><p>La page charge Google Maps et Google AdSense ; ces services tiers peuvent traiter des données ou définir des cookies selon leurs propres règles. Consultez leurs politiques avant de les utiliser.</p><p>Contact : claritleonelmnicol@gmail.com</p>"
     },
     terms: {
       title: "Conditions d'utilisation",
-      content: "<h1>Conditions d’utilisation</h1><p>Ce guide indépendant est informatif. Les horaires, travaux et conditions de visite peuvent changer : vérifiez les sources officielles avant de partir.</p><p>Les textes du site sont protégés. Ne réutilisez pas les images sans vérifier leurs droits auprès des titulaires concernés.</p><p>Contact : claritleonelmnicol@gmail.com</p>"
+      content: "<p>Ce guide indépendant est informatif. Les horaires, travaux et conditions de visite peuvent changer : vérifiez les sources officielles avant de partir.</p><p>Les textes du site sont protégés. Ne réutilisez pas les images sans vérifier leurs droits auprès des titulaires concernés.</p><p>Contact : claritleonelmnicol@gmail.com</p>"
     },
     cookies: {
       title: "Paramètres des cookies",
-      content: "<h1>Cookies et services tiers</h1><p>Le site conserve la préférence de thème dans le stockage local du navigateur. Google Maps et Google AdSense peuvent utiliser des cookies ou d’autres technologies selon leurs propres politiques. Ce site ne propose pas de panneau de choix des cookies.</p>"
+      content: "<p>Le site conserve la préférence de thème dans le stockage local du navigateur. Google Maps et Google AdSense peuvent utiliser des cookies ou d’autres technologies selon leurs propres politiques. Ce site ne propose pas de panneau de choix des cookies.</p>"
     }
   },
   en: {
@@ -198,15 +198,15 @@ export const translations: Record<string, any> = {
     },
     privacy: {
       title: "Privacy Policy",
-      content: "<h1>Privacy</h1><p>This guide has no account or booking form. Your theme preference may be stored locally in your browser.</p><p>The page loads Google Maps and Google AdSense. These third parties may process data or set cookies under their own policies. Review those policies before using the services.</p><p>Contact: claritleonelmnicol@gmail.com</p>"
+      content: "<p>This guide has no account or booking form. Your theme preference may be stored locally in your browser.</p><p>The page loads Google Maps and Google AdSense. These third parties may process data or set cookies under their own policies. Review those policies before using the services.</p><p>Contact: claritleonelmnicol@gmail.com</p>"
     },
     terms: {
       title: "Terms of Service",
-      content: "<h1>Terms of use</h1><p>This independent guide is informational. Hours, works and visitor conditions can change; check official sources before travelling.</p><p>The site text is protected. Do not reuse images without checking the applicable rights with their owners.</p><p>Contact: claritleonelmnicol@gmail.com</p>"
+      content: "<p>This independent guide is informational. Hours, works and visitor conditions can change; check official sources before travelling.</p><p>The site text is protected. Do not reuse images without checking the applicable rights with their owners.</p><p>Contact: claritleonelmnicol@gmail.com</p>"
     },
     cookies: {
       title: "Cookie Settings",
-      content: "<h1>Cookies and third-party services</h1><p>The site stores the theme preference in browser local storage. Google Maps and Google AdSense may use cookies or other technologies under their own policies. This site does not provide a cookie preference panel.</p>"
+      content: "<p>The site stores the theme preference in browser local storage. Google Maps and Google AdSense may use cookies or other technologies under their own policies. This site does not provide a cookie preference panel.</p>"
     }
   },
   de: {
@@ -303,15 +303,15 @@ export const translations: Record<string, any> = {
     },
     privacy: {
       title: "Datenschutzrichtlinie",
-      content: "<h1>Datenschutz</h1><p>Dieser Reiseführer bietet weder Benutzerkonten noch Buchungsformulare. Die Designeinstellung kann lokal im Browser gespeichert werden.</p><p>Die Seite lädt Google Maps und Google AdSense. Diese Drittanbieter können Daten verarbeiten oder Cookies gemäß ihren eigenen Richtlinien setzen.</p><p>Kontakt: claritleonelmnicol@gmail.com</p>"
+      content: "<p>Dieser Reiseführer bietet weder Benutzerkonten noch Buchungsformulare. Die Designeinstellung kann lokal im Browser gespeichert werden.</p><p>Die Seite lädt Google Maps und Google AdSense. Diese Drittanbieter können Daten verarbeiten oder Cookies gemäß ihren eigenen Richtlinien setzen.</p><p>Kontakt: claritleonelmnicol@gmail.com</p>"
     },
     terms: {
       title: "Nutzungsbedingungen",
-      content: "<h1>Nutzungsbedingungen</h1><p>Dieser unabhängige Reiseführer dient der Information. Öffnungszeiten, Bauarbeiten und Besuchsbedingungen können sich ändern. Prüfen Sie vor der Anreise offizielle Quellen.</p><p>Die Texte sind geschützt. Verwenden Sie Bilder nicht erneut, ohne die jeweiligen Rechte zu prüfen.</p><p>Kontakt: claritleonelmnicol@gmail.com</p>"
+      content: "<p>Dieser unabhängige Reiseführer dient der Information. Öffnungszeiten, Bauarbeiten und Besuchsbedingungen können sich ändern. Prüfen Sie vor der Anreise offizielle Quellen.</p><p>Die Texte sind geschützt. Verwenden Sie Bilder nicht erneut, ohne die jeweiligen Rechte zu prüfen.</p><p>Kontakt: claritleonelmnicol@gmail.com</p>"
     },
     cookies: {
       title: "Cookie-Einstellungen",
-      content: "<h1>Cookies und Drittanbieter</h1><p>Die Seite speichert die Designeinstellung im lokalen Browserspeicher. Google Maps und Google AdSense können Cookies oder andere Technologien gemäß ihren eigenen Richtlinien verwenden. Diese Seite bietet kein Cookie-Einstellungsfenster.</p>"
+      content: "<p>Die Seite speichert die Designeinstellung im lokalen Browserspeicher. Google Maps und Google AdSense können Cookies oder andere Technologien gemäß ihren eigenen Richtlinien verwenden. Diese Seite bietet kein Cookie-Einstellungsfenster.</p>"
     }
   },
   'zh-Hant': {
@@ -408,15 +408,15 @@ export const translations: Record<string, any> = {
     },
     privacy: {
       title: "隱私權政策",
-      content: "<h1>隱私</h1><p>本指南不提供帳戶或訂房表單。主題偏好可能儲存在瀏覽器本機。</p><p>頁面載入 Google Maps 與 Google AdSense。這些第三方可能依其政策處理資料或設定 Cookie，使用前請查閱其政策。</p><p>聯絡：claritleonelmnicol@gmail.com</p>"
+      content: "<p>本指南不提供帳戶或訂房表單。主題偏好可能儲存在瀏覽器本機。</p><p>頁面載入 Google Maps 與 Google AdSense。這些第三方可能依其政策處理資料或設定 Cookie，使用前請查閱其政策。</p><p>聯絡：claritleonelmnicol@gmail.com</p>"
     },
     terms: {
       title: "服務條款",
-      content: "<h1>使用條款</h1><p>本獨立指南僅供參考。開放時間、工程及參觀條件可能變更；出發前請查閱官方來源。</p><p>本站文字受保護。未向權利人核實圖片權利前，請勿重用圖片。</p><p>聯絡：claritleonelmnicol@gmail.com</p>"
+      content: "<p>本獨立指南僅供參考。開放時間、工程及參觀條件可能變更；出發前請查閱官方來源。</p><p>本站文字受保護。未向權利人核實圖片權利前，請勿重用圖片。</p><p>聯絡：claritleonelmnicol@gmail.com</p>"
     },
     cookies: {
       title: "Cookie 設定",
-      content: "<h1>Cookie 與第三方服務</h1><p>本站在瀏覽器本機儲存主題偏好。Google Maps 與 Google AdSense 可能依其政策使用 Cookie 或其他技術。本站沒有 Cookie 偏好設定面板。</p>"
+      content: "<p>本站在瀏覽器本機儲存主題偏好。Google Maps 與 Google AdSense 可能依其政策使用 Cookie 或其他技術。本站沒有 Cookie 偏好設定面板。</p>"
     }
   }
 };

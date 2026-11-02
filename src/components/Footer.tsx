@@ -66,20 +66,24 @@ export default function Footer() {
       {['privacy', 'terms', 'cookies'].map((type) => (
         <div 
           key={type}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby={`${type}-dialog-title`}
           className={`fixed inset-0 z-[200] bg-[var(--bg)] overflow-y-auto transition-opacity duration-300 ${activeModal === (type === 'cookies' ? 'cookiePage' : `${type}Page`) ? 'opacity-100 block' : 'opacity-0 hidden'}`}
         >
           <div className="container mx-auto px-4 max-w-[var(--container)]">
             <div className="flex items-center justify-between py-6 border-b border-[var(--border)] mb-8">
-              <h3 className="font-display text-[1.2rem]">{t(`${type}.title`)}</h3>
+              <h2 id={`${type}-dialog-title`} className="font-display text-[1.2rem]">{t(`${type}.title`)}</h2>
               <button 
                 className="w-9 h-9 rounded-full border border-[var(--border)] bg-[var(--bg-card)] text-[var(--text-secondary)] cursor-pointer flex items-center justify-center text-[1.1rem] transition-all hover:border-[var(--accent)] hover:text-[var(--text)]"
                 onClick={() => setActiveModal(null)}
+                aria-label="Fermer"
               >
                 ✕
               </button>
             </div>
             <div 
-              className="pb-16 prose prose-invert max-w-none text-[var(--text-secondary)] prose-h1:text-[1.8rem] prose-h1:text-[var(--text)] prose-h2:text-[1.2rem] prose-h2:text-[var(--text)] prose-p:text-[0.88rem] prose-p:leading-[1.8] prose-li:text-[0.88rem] prose-li:leading-[1.8]"
+              className="pb-16 prose prose-invert max-w-none text-[var(--text-secondary)] prose-h3:text-[1.2rem] prose-h3:text-[var(--text)] prose-p:text-[0.88rem] prose-p:leading-[1.8] prose-li:text-[0.88rem] prose-li:leading-[1.8]"
               dangerouslySetInnerHTML={{ __html: t(`${type}.content`) }} 
             />
           </div>
