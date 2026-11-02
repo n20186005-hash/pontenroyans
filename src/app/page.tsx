@@ -13,17 +13,18 @@ import {
   practicalInfo,
   quickLinks,
   siteUrl,
+  sources,
 } from '../data/site-content'
 
 export const metadata: Metadata = {
-  title: 'Pont-en-Royans : maisons suspendues, visite & que faire (2026)',
+  title: 'Visiter Pont-en-Royans : maisons suspendues et parcours du village',
   description:
     'Decouvrez Pont-en-Royans : maisons suspendues, que faire, points de vue, Musee de l Eau, acces, parking, photos et conseils pratiques pour organiser votre visite.',
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Pont-en-Royans : maisons suspendues, visite & que faire (2026)',
+    title: 'Visiter Pont-en-Royans : maisons suspendues et parcours du village',
     description:
       'Guide destination pour visiter Pont-en-Royans, voir les maisons suspendues, organiser une demi-journee et preparer une sortie dans le Vercors.',
     url: siteUrl,
@@ -60,15 +61,6 @@ const structuredData = [
     description:
       'Guide pour visiter Pont-en-Royans, ses maisons suspendues, le Musee de l Eau et les activites autour du village.',
     touristType: ['couples', 'families', 'photographers'],
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: attraction.address,
-      postalCode: '38680',
-      addressLocality: 'Pont-en-Royans',
-      addressCountry: 'FR',
-    },
-    telephone: attraction.phone,
-    sameAs: [attraction.mapsUrl],
   },
   {
     '@context': 'https://schema.org',
@@ -109,29 +101,28 @@ export default function Home() {
               <span>Guide destination</span>
               <span className="opacity-40">|</span>
               <a href={attraction.mapsUrl} target="_blank" rel="noopener noreferrer" className="hover:text-[var(--text)]">
-                {attraction.rating}/5 ({attraction.reviewCount} avis)
+                Voir le lieu sur Google Maps
               </a>
               <span className="opacity-40">|</span>
-              <span>{attraction.category}</span>
+              <span>Isère · Royans</span>
             </div>
 
             <h1 className="mt-6 max-w-4xl font-display text-[clamp(2.3rem,6vw,4.4rem)] leading-tight text-white">
               Pont-en-Royans : visiter le village et ses maisons suspendues
             </h1>
             <p className="mt-5 max-w-2xl text-lg leading-8 text-[var(--text-secondary)]">
-              Decouvrez quoi faire a Pont-en-Royans, les meilleurs points de vue sur les maisons suspendues,
-              l acces, le parking, les photos a ne pas manquer et les idees de visite autour du village.
+              Découvrez les maisons suspendues au-dessus de la Bourne, parcourez les ruelles du village et préparez une sortie dans le Royans à partir de sources touristiques officielles.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
-                href="/que-faire-pont-en-royans/"
+                href="/que-faire-pont-en-royans"
                 className="rounded-md bg-[var(--accent)] px-5 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
               >
                 Que faire a Pont-en-Royans
               </Link>
               <Link
-                href="/maisons-suspendues-pont-en-royans/"
+                href="/maisons-suspendues-pont-en-royans"
                 className="rounded-md border border-[var(--badge-border)] px-5 py-3 text-sm font-medium text-[var(--text-secondary)] transition-colors hover:border-[var(--text)] hover:text-[var(--text)]"
               >
                 Page maisons suspendues
@@ -189,12 +180,10 @@ export default function Home() {
           <div className="max-w-3xl">
             <p className="text-xs uppercase tracking-[0.16em] text-[var(--text-tertiary)]">Visite</p>
             <h2 className="mt-3 font-display text-[clamp(1.8rem,4vw,3rem)] text-[var(--text)]">
-              Organiser une visite qui correspond enfin a l intention de recherche
+              Organiser votre parcours dans le village
             </h2>
             <p className="mt-5 text-base leading-8 text-[var(--text-secondary)]">
-              La page d accueil doit repondre d abord a la requete Pont-en-Royans, puis distribuer
-              clairement vers les intentions plus precises. C est pourquoi nous separons maintenant la
-              destination, les activites et la page dediee aux maisons suspendues.
+              Commencez par les points de vue sur la Bourne, puis suivez le circuit patrimonial dans les rues anciennes. Le plan de l’office de tourisme vous aide à choisir les étapes selon votre temps et votre mobilité.
             </p>
           </div>
 
@@ -204,20 +193,19 @@ export default function Home() {
               <ol className="mt-6 space-y-5 text-sm leading-7 text-[var(--text-secondary)]">
                 <li>1. Commencez par la vue classique sur les maisons suspendues depuis le pont et la rive opposee.</li>
                 <li>2. Parcourez les ruelles du village pour voir les facades, la Bourne et les passages anciens.</li>
-                <li>3. Ajoutez le Musee de l Eau pour enrichir la visite et allonger le temps passe sur place.</li>
-                <li>4. Prolongez ensuite vers les gorges de la Bourne ou Choranche pour une vraie journee autour de Pont-en-Royans.</li>
+                <li>3. Passez par la place du Breuil ; l’espace muséographique du Musée de l’Eau est fermé pour rénovation depuis octobre 2026.</li>
+                <li>4. Si vous poursuivez vers les gorges de la Bourne ou Choranche, vérifiez d’abord les routes et les conditions de visite.</li>
               </ol>
             </div>
 
             <div className="rounded-[var(--radius)] border border-[var(--border)] bg-[var(--bg-card)] p-7">
-              <p className="text-xs uppercase tracking-[0.16em] text-[var(--text-tertiary)]">Lien interne prioritaire</p>
-              <h3 className="mt-3 text-xl font-semibold text-[var(--text)]">Nouvelle page SEO a pousser</h3>
+              <p className="text-xs uppercase tracking-[0.16em] text-[var(--text-tertiary)]">Idées de visite</p>
+              <h3 className="mt-3 text-xl font-semibold text-[var(--text)]">Pour prolonger la promenade</h3>
               <p className="mt-4 text-sm leading-7 text-[var(--text-secondary)]">
-                La page la plus prometteuse a court terme est celle sur les activites et idees de visite,
-                car Google vous positionne deja tres bien sur ces requetes.
+                Retrouvez les étapes du centre ancien, les informations sur le Musée de l’Eau et des idées pour poursuivre la journée dans le Royans.
               </p>
               <Link
-                href="/que-faire-pont-en-royans/"
+                href="/que-faire-pont-en-royans"
                 className="mt-6 inline-flex rounded-md bg-[var(--accent)] px-4 py-2.5 text-sm font-medium text-white"
               >
                 Ouvrir la page Que faire
@@ -232,7 +220,7 @@ export default function Home() {
           <div className="max-w-3xl">
             <p className="text-xs uppercase tracking-[0.16em] text-[var(--text-tertiary)]">Informations pratiques</p>
             <h2 className="mt-3 font-display text-[clamp(1.8rem,4vw,3rem)] text-[var(--text)]">
-              Les informations que les visiteurs cherchent en priorite sur mobile
+              Informations pratiques avant de partir
             </h2>
           </div>
           <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-5">
@@ -260,18 +248,19 @@ export default function Home() {
           <div className="max-w-3xl">
             <p className="text-xs uppercase tracking-[0.16em] text-[var(--text-tertiary)]">Autour du village</p>
             <h2 className="mt-3 font-display text-[clamp(1.8rem,4vw,3rem)] text-[var(--text)]">
-              Les themes a developper pour gagner du trafic utile
+              D’autres étapes autour du village
             </h2>
             <p className="mt-5 text-base leading-8 text-[var(--text-secondary)]">
-              Les requetes les plus prometteuses sont rarement purement historiques. Elles portent plutot sur
-              que faire, visiter, restaurants, photos, marche, parking et sorties autour de Pont-en-Royans.
+              Le village se visite facilement à pied, mais les activités voisines et les routes du Vercors demandent une vérification des conditions du jour.
             </p>
           </div>
+          <p className="mt-5 text-sm text-[var(--text-secondary)]">Sources : <a className="underline" href={sources.village}>office de tourisme : village</a> · <a className="underline" href={sources.circuit}>circuit patrimonial</a> · <a className="underline" href={sources.museum}>Musée de l’Eau</a> · <a className="underline" href={sources.road}>état des routes</a>. Vérification : 2 novembre 2026.</p>
           <div className="mt-10 grid gap-5 md:grid-cols-2">
             {aroundVillage.map((item) => (
               <article key={item.title} className="rounded-[var(--radius)] border border-[var(--border)] bg-[var(--bg-card)] p-6">
                 <h3 className="text-xl font-semibold text-[var(--text)]">{item.title}</h3>
                 <p className="mt-4 text-sm leading-7 text-[var(--text-secondary)]">{item.text}</p>
+                {item.title === "Musée de l’Eau" && <Link href="/musee-eau-pont-en-royans" className="mt-3 inline-block text-sm text-blue-500 underline">Ce qui reste accessible pendant les travaux</Link>}
               </article>
             ))}
           </div>
@@ -284,7 +273,7 @@ export default function Home() {
             <div className="max-w-3xl">
               <p className="text-xs uppercase tracking-[0.16em] text-[var(--text-tertiary)]">Photos</p>
               <h2 className="mt-3 font-display text-[clamp(1.8rem,4vw,3rem)] text-[var(--text)]">
-                Les images restent un levier fort pour la requete Pont-en-Royans
+                Pont-en-Royans en images
               </h2>
             </div>
             <a href={attraction.mapsUrl} target="_blank" rel="noopener noreferrer" className="text-sm text-blue-500 underline underline-offset-4">
@@ -348,7 +337,7 @@ export default function Home() {
           <div className="max-w-3xl">
             <p className="text-xs uppercase tracking-[0.16em] text-[var(--text-tertiary)]">Questions frequentes</p>
             <h2 className="mt-3 font-display text-[clamp(1.8rem,4vw,3rem)] text-[var(--text)]">
-              Reponses rapides avant de cliquer plus loin
+              Questions fréquentes
             </h2>
           </div>
           <div className="mt-10 space-y-4">

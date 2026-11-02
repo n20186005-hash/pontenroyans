@@ -19,14 +19,8 @@ const TranslationContext = createContext<TranslationContextType | undefined>(und
 export function TranslationProvider({ children }: { children: ReactNode }) {
   const [language, setLanguageState] = useState<Language>('fr');
   const [theme, setThemeState] = useState<Theme>('dark');
-  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const savedLang = localStorage.getItem('lang') as Language;
-    if (savedLang && Object.keys(translations).includes(savedLang)) {
-      setLanguageState(savedLang);
-    }
-    
     const savedTheme = localStorage.getItem('theme') as Theme;
     if (savedTheme === 'dark' || savedTheme === 'light') {
       setThemeState(savedTheme);
@@ -34,7 +28,6 @@ export function TranslationProvider({ children }: { children: ReactNode }) {
     } else {
       document.documentElement.setAttribute('data-theme', 'dark');
     }
-    setMounted(true);
   }, []);
 
   const setLanguage = (lang: Language) => {
@@ -59,14 +52,6 @@ export function TranslationProvider({ children }: { children: ReactNode }) {
     }
     return val || key;
   };
-
-  if (!mounted) {
-    return (
-      <TranslationContext.Provider value={{ language, setLanguage: setLanguageState, theme, toggleTheme: () => {}, t }}>
-        <div style={{ visibility: 'hidden' }}>{children}</div>
-      </TranslationContext.Provider>
-    );
-  }
 
   return (
     <TranslationContext.Provider value={{ language, setLanguage, theme, toggleTheme, t }}>
